@@ -30,6 +30,6 @@ stages:
         command: buildAndPush
         containerRegistry: pruebas-azure
         dockerfile: 'app/Dockerfile'
-        respository: pedrlopez/pruebas-azure
+        respository: https://hub.docker.com/repository/docker/pedrlopez/pruebas-azure
         tags: |
           $(tag)
