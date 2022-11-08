@@ -23,5 +23,6 @@ stages:
       displayName:  Build and Push
       inputs:
         command: buildAndPush
+        dockerfile: 'app/Dockerfile'
         containerRegistry: pruebas-azure
         respository: pedrlopez/pruebas-azure
