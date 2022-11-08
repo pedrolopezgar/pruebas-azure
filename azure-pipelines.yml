@@ -18,10 +18,9 @@ stages:
     displayName: Build
     pool:
       vmImage: 'ubuntu-latest'
-    steps:
-
-    - task: Docker@2
-    displayName: Build and Push
+  steps:
+ - task: Docker@2
+   displayName:  Build and Push
     inputs:
         command: buildAndPush
         containerRegistry: pruebas-azure
